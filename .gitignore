@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Model checkpoints / training data (large, regeneratable, not source)
+*.pth
+*.pt
+cam6/
+
+# OS/editor cruft
+.DS_Store
+*.swp
+
