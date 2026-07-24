@@ -1,5 +1,7 @@
 # Segmentation
 
+> **Note:** All code in this repository was written by Kleber Cabral. The README documentation and inline code comments were added with AI assistance (Claude).
+
 Trains a convolutional autoencoder, then reuses its frozen encoder to train a separate segmentation decoder — a two-stage "pretrain then adapt" approach for segmenting snowy camera images.
 
 ## Structure
