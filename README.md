@@ -2,6 +2,8 @@
 
 > **Note:** All code in this repository was written by Kleber Cabral. The README documentation and inline code comments were added with AI assistance (Claude).
 
+> **Untested idea.** This approach was never trained or evaluated end to end. It's published to share the idea (unsupervised pretraining of an encoder on snowy images, then a segmentation decoder on top of the frozen encoder), not as working or validated code. No results are claimed.
+
 Trains a convolutional autoencoder, then reuses its frozen encoder to train a separate segmentation decoder — a two-stage "pretrain then adapt" approach for segmenting snowy camera images.
 
 ## Structure
@@ -48,7 +50,7 @@ python src/train_segmentation_model.py
 
 ## Status
 
-Study/teaching-style code (heavily line-commented) rather than a production training pipeline. Runs top-to-bottom as a script with no `if __name__ == "__main__":` guard, no CLI arguments, no model checkpoint saving, and no evaluation/validation split — hyperparameters (epochs, learning rate, batch size, latent dim) are hardcoded inline. Not runnable without supplying the expected data directories.
+**Untested; idea only** (see the note at the top). Study/teaching-style code (heavily line-commented) rather than a production training pipeline. Runs top-to-bottom as a script with no `if __name__ == "__main__":` guard, no CLI arguments, no model checkpoint saving, and no evaluation/validation split — hyperparameters (epochs, learning rate, batch size, latent dim) are hardcoded inline. Not runnable without supplying the expected data directories.
 
 ## License
 
