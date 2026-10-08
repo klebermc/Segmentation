@@ -1,6 +1,6 @@
 # Segmentation
 
-> **Note:** All code in this repository was written by Kleber Cabral. The README documentation and inline code comments were added with AI assistance (Claude).
+> **Note:** The idea is Kleber Cabral's. The training script was generated with an AI assistant from his description, and the README documentation was added with AI assistance (Claude).
 
 > **Untested idea.** This approach was never trained or evaluated end to end. It's published to share the idea (unsupervised pretraining of an encoder on snowy images, then a segmentation decoder on top of the frozen encoder), not as working or validated code. No results are claimed.
 
